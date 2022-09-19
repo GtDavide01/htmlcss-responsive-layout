@@ -54,13 +54,13 @@ header button{
 /* /HEADER */
 
 /* MAIN */
+
 /* SECTION CARDDEMO */
 
 .carddemo .col{
     text-align: center;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding: 2rem 2rem;
+    padding-bottom: 0px ;
     flex-direction: column;
     border-radius: 1rem;
     background-color: #b5ddff ;
@@ -95,12 +95,10 @@ header button{
     background-color: #9792e4 ;
 }
 .planning .container{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem 0;
 }
 .planning .planningcardfirst , .planning .planningcardsecond{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
 }
 .planning .planningcardsecond{
     background-color: white;
@@ -360,7 +358,7 @@ footer a {
         width: calc(100% / 3 * 2 - .5rem);
     }
     .carddemo .imgcoldemo img{
-        width: 100%;
+        width: 50%;
     }
     /* SECTION PLANNING */
     .testimonials .cardtestimonial{
