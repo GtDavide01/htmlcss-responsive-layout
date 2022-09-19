@@ -108,10 +108,62 @@ header .menudesktop{
     padding: 2rem;
     border-radius: 1.5rem;
 }
+.benefits .row{
+    padding-bottom: 2rem;
+}
 
+/* SECTION ABOUTUS */
 
+.aboutus{
+    margin-top: 5rem;
+}
+.aboutus .aboutusinfo h2 , .aboutusinfo p , .aboutuscard{
+    margin-top: 2rem;
+}
+.aboutusinfo h2{
+    color: #9792e4;
+}
+.aboutuscard{
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+/* SECTION GATSTARTED */
+.getstarted{
+    background-color: #9792e4;
+    padding-top: 2rem;
+}
+.getstarted .container {
+    text-align: center;
+}
+.getstarted p , .getstarted h3 , .getstarted h2 , .getstarted button{
+    margin-bottom: 2rem;
+}
+.getstarted ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.getstarted li , .getstarted a{
+    color: white;
+    margin: 0 .5rem;
+}
+.getstarted .getstartedfooter{
+    padding-bottom: 2rem;
+}
 /* /MAIN */
 
+/* FOOTER */
+footer{
+    background-color: #333333;
+}
+footer p{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+}
+/* /FOOTER */
 
 
 
@@ -152,6 +204,32 @@ header .menudesktop{
     }
     .benefits .benefitcard{
         width: calc(100% / 2 - 1.5rem);
+    }
+    
+    /* SECTION ABOUTUS */
+    .aboutus .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 1.5rem;
+    }
+    .aboutus .aboutusinfo{
+        width: 60%;
+        margin-bottom: 5rem;
+    }
+    .aboutus .aboutuscard{
+        width: 40%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    /* SECTION GETSTARTED */
+    .getstarted .container {
+        width: 70%;
+        text-align: center;
+    }
+    /* FOOTER */
+    footer .container{
+        width: 60%;
     }
 }
 
@@ -221,5 +299,13 @@ header .menudesktop{
     .benefits .benefitcard{
         width: calc(100% / 3 - 1.5rem);
     }
-
+    /* SECTION GETSTARTED */
+    .getstarted .container {
+        width: 60%;
+        text-align: center;
+    }
+       /* FOOTER */
+       footer .container{
+        width: 50%;
+    }
 }
