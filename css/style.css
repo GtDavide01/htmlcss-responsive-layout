@@ -12,3 +12,81 @@ html{
 img{
     max-width: 100%;
 }
+
+/* COMMON */
+.flex{
+    display: flex;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header{
+    background-color: #0084fd;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+header .container{
+    align-items: center;
+    justify-content: space-between;
+}
+header .hamburgermenu{
+    color: white;
+    font-size: 1.5rem;
+}
+/* /HEADER */
+
+/* MAIN */
+/* SECTION CARDDEMO */
+.carddemo .col{
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: #b5ddff ;
+    /* DEBUG */
+    margin-bottom: 1.5rem;
+}
+.textcoldemo , .imgcoldemo{
+    margin-bottom: 1rem;
+}
+
+/* /MAIN */
+
+
+
+
+
+
+/* MEDIAQUERY */
+/* TABLET */
+@media screen and (min-width : 768px){
+
+    /* SECTION CARDDEMO */
+    .carddemo .row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .carddemo .col{
+        width: calc(100% / 3 - 1rem);
+    }
+    .carddemo .col:first-child {
+        width: calc(100% / 3 * 2 - .5rem);
+    }
+}
+/* DESKTOP */
+@media screen and (min-width : 992px){
+    .container{
+        width: 80%;
+    }
+    .carddemo .col:first-child{
+        display: flex;
+        flex-direction: row;
+    }
+    .carddemo .col:first-child .imgcoldemo{
+        align-items: flex-end;
+    }
+}
