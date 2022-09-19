@@ -42,19 +42,52 @@ header .hamburgermenu{
 header .menudesktop{
     display: none;
 }
+header button{
+    color: black;
+    background-color: white;
+    border-radius: 2rem;
+    border : 0px ;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .5rem;
+}
 /* /HEADER */
 
 /* MAIN */
 /* SECTION CARDDEMO */
+
 .carddemo .col{
+    text-align: center;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     flex-direction: column;
     border-radius: 1rem;
     background-color: #b5ddff ;
-    /* DEBUG */
     margin-bottom: 1.5rem;
 }
-.textcoldemo , .imgcoldemo{
+.carddemo .col:first-child{
+    text-align: left;
+}
+.carddemo .iconcoldemo i{
+    color: #0084fd;
+    font-size: 4rem;
     margin-bottom: 1rem;
+}
+#appstore{
+    background-color: #0084fd;
+    border-radius: 2rem;
+    color: white;
+    border: 0px;
+    margin-top: 2rem;
+    padding: .5rem 3rem;
+}
+.textcoldemo {
+    margin-bottom: 1rem;
+}
+.carddemo .col h3{
+    color: #0084fd;
+    margin-bottom: 2rem;
 }
 
 /* SECTION PLANNING */
@@ -68,26 +101,64 @@ header .menudesktop{
 .planning .planningcardfirst , .planning .planningcardsecond{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    border: 1px solid black;
 }
 .planning .planningcardsecond{
     background-color: white;
     border-radius: 2rem;
     flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+}
+.planning .planningcardsecond p{
+    font-style: italic;
+}
+.planningcardsecond i{
+    margin-top: 2rem;
+    border-radius: 50%;
+    background-color: #9792e4;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.planningcardfirst .planningtext{
+    color: white;
+}
+.planning .planningtext h2{
+    margin: 2rem 0 ;
+    font-size: 1.5rem;
 }
 
 /* SECTION TESTIMONIAL */
 .testimonials .testimonialinfo{
     text-align: center;
 }
+.testimonialinfo p{
+    margin-top: 1rem;
+}
+.testimonialinfo h2{
+    margin:1rem 0 ; 
+    color: #9792e4;
+}
 .testimonials .cardtestimonial{
+    padding: 2rem;
     flex-direction: column;
     margin-top:1.5rem;
     background-color: #9792e4 ;
     border-radius: 1.5rem;
     text-align: center;
 }
+.imgtestimonial{
+    
+}
 .testimonials .texttestimonial{
+    margin-top: 1rem;
+    color: white;
+}
+.texttestimonial i{
+    margin: 0 .5rem;
+}
+.texttestimonial h4{
     margin-top: 1rem;
 }
 
@@ -183,6 +254,9 @@ footer p{
     .carddemo .col:first-child {
         width: calc(100% / 3 * 2 - .5rem);
     }
+    .carddemo .imgcoldemo img{
+        width: 100%;
+    }
     /* SECTION PLANNING */
     .testimonials .cardtestimonial{
         flex-direction: row;
@@ -251,6 +325,8 @@ footer p{
     header .menudesktop ul{
         display: flex;
         list-style-type: none;
+        justify-content: center;
+        align-items: center;
     }
     header .menudesktop li{
         margin-left: 1.5rem;
@@ -264,11 +340,15 @@ footer p{
     .carddemo .col:first-child .imgcoldemo{
         align-items: flex-end;
     }
+    .carddemo .imgcoldemo img{
+        width: 100%;
+    }
     /* SECTION PLANNING */
     .planning .row{
         display: flex;
         flex-wrap: wrap;
         gap: 1.5rem;
+        align-items: baseline;
     }
     .planning .planningcardfirst , .planning .planningcardsecond{
         width: calc(100% / 2 - 1.5rem);
@@ -276,6 +356,9 @@ footer p{
     .planning .planningcardsecond{
         flex-direction: column;
         justify-content: end;
+    }
+    .planning .planningcardsecond img{
+        width: 50%;
     }
     /* SECTION TESTIMONIAL */
     .testimonials .cardtestimonial{
